@@ -7,8 +7,10 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
-  arr.sort((a,b) => b-a);
-  return arr;
+  arr.sort((a,b) => {
+    return b - a;
+  });
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -18,11 +20,14 @@ Write a function named alphabetize that takes in an array of strings and returns
 
 In this alphabetization, capital letters come before lower case letters.
 
-For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
+For example,  is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  arr.sort((a,b) => return a-b);
+  arr.sort((a,b) => {
+    return a - b;
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,7 +37,10 @@ Write a function named sortByLength that takes in an array of strings and return
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    return a.length - b.length;
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,7 +52,9 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  // Solution code here...
+    arr.sort((a,b) => {
+      return (a.toUppercase) - (b.toUpperCase);
+    })
 };
 
 /* ------------------------------------------------------------------------------------------------
