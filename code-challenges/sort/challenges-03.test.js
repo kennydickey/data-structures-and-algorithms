@@ -25,7 +25,8 @@ For example,  is correctly sorted.
 
 const alphabetize = (arr) => {
   arr.sort((a,b) => {
-    return a - b;
+    if( a == b) return 0; 
+    return a < b ? -1 : 1;
   })
   return arr;
 };
@@ -52,9 +53,13 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-    arr.sort((a,b) => {
-      return (a.toUppercase) - (b.toUpperCase);
-    })
+  arr.sort((a,b) => {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if( a == b) return 0;
+    return a < b ? -1 : 1;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,7 +76,12 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => {
+    a = a.price;
+    b = b.price;
+    return a - b;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
