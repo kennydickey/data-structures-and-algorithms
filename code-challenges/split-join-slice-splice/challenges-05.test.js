@@ -15,7 +15,7 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  for(let i = 0; i < 8; i++){
+  for(let i = 0; i < str.length+1; i++){
     let newstr = str.slice(i);
     result.push(newstr);
   }
@@ -93,12 +93,15 @@ You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
 
 const splitFoods = (recipe) => {
-  let result = [];
-  for(let i = 0; i < 11; i++){
-    let select = recipe.ingredients[i].split(" ");
-    result.push(select[2]);
-  }
-  return result;
+  let results = [];
+  let recipeList = recipe.ingredients; 
+  recipeList.forEach(value => {
+    let words = value.split(" ");
+    return words[4] ? results.push(`${words[2]} ${words[3]} ${words[4]}`)
+    : words[3] ? results.push(`${words[2]} ${words[3]}`)
+    : results.push(words[2])
+  })
+  return results;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -156,7 +159,8 @@ removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
 const removeLastCharacters = (str, numberOfCharacters) => {
-  // Solution code here...
+  return numberOfCharacters > 0 ? str.slice(0, -numberOfCharacters)
+  : str;
 };
 
 
