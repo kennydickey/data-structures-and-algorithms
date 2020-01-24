@@ -102,7 +102,7 @@ const splitFoods = (recipe) => {
     : results.push(words[2])
   })
   return results;
-};
+}; //worked with jin
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
