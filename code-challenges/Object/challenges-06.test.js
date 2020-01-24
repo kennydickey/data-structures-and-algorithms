@@ -101,7 +101,7 @@ const hasChildrenValues = (arr, character) => {
     return false;
   };
   
-  // console.log(Object.values(characters[0].children))
+  // worked with jin
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@ const hasChildrenEntries = (arr, character) => {
   } else {
     return false;
   };
-};
+}; //worked with jin
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
