@@ -86,11 +86,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  arr = str.split();
-  return arr.reduce((acc, currentValue ,currentindex) => {
-    
-    return acc.toString();
-  }, [])
+  let arr = str.split('');
+  let reversed = arr.reduce((newString, currentLetter) => {
+    return currentLetter + newString;
+  }, '');
+  return reversed;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -143,7 +143,13 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  let newArr = [];
+let numkids = arr.reduce((acc, value ,i) => {
+    if(value.children){
+      newArr.push(value.children.length);
+    } 
+    },0)
+    return newArr.reduce((a, b) => a + b, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
