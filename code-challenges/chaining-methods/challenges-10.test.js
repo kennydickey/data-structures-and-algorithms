@@ -11,7 +11,15 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  let num = []
+for(let i = 0; i < input.length; i++){
+  let newArr = input[i].map((val, idx) => {
+    if (val === target){
+      num.push(val);
+    }
+  })
+}
+return num.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -25,7 +33,14 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  let num = 0;
+for(let i = 0; i < input.length; i++){
+  let newArr = input[i].map((val, idx) => {
+    // console.log(val)
+    num = num + val;
+  })
+}
+return num;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -107,7 +122,15 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let newArr = [];
+  let peeps = data.reduce((acc, value ,i) => {
+    if(value.gender === 'male' || value.gender === 'female'){
+      newArr.push(value.name);
+    } 
+    return newArr;
+    },0)
+    let newArr2 = newArr.join(' and ');
+    return newArr2
 };
 
 /* ------------------------------------------------------------------------------------------------
