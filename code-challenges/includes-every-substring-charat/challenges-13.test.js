@@ -9,7 +9,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  // Solution code here...
+  let newArr = []
+for(let i = 0; i < arr.length; i++){
+newArr.push(arr[i].substring(0,1))
+}
+return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,7 +25,13 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+let newArr = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].includes(':)')){
+      newArr.push(arr[i]);
+    }
+  }
+return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,7 +43,22 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+var newArr = [];
+var newArr2 = [];
+let f = [];
+for(let i = 0; i < arr.length; i++){
+  for(let j = 0; j < arr[0].length; j++){
+  
+  if((arr[i].charAt(j) !== '(' && arr[i].charAt(j) !== ')' && arr[i].charAt(j) !== '-' && arr[i].charAt(j) !== ' ')){
+    newArr.push(arr[0].charAt(j));
+    newArr2.push(arr[1].charAt(j));
+    }
+  }
+  f.push(newArr.join(''))
+  f.push(newArr2.join(''))
+}
+let g = f.slice(0,2);
+return g;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,7 +70,13 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  let newStr = [];
+for(let i = 1; i < str.length; i+=2){
+  // console.log(str[i])
+  newStr.push(str[i]);
+}
+// console.log(newStr)
+return newStr.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +86,11 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].includes(':)')){
+      return true;
+    } 
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
