@@ -70,8 +70,6 @@ const validatePhoneNumber = (phoneNumber) => {
   if (phoneNumber.includes("ext.")){
     return false;
   }
-
-
 };
 
 /* ------------------------------------------------------------------------------------------------
