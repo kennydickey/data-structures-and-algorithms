@@ -23,7 +23,83 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+
+  let arr1 = [];
+  let arr2 = [];
+  let arr3 = [];
+  let arr4 = [];
+  let arr5 = [];
+  let arr6 = [];
+  let arr7 = [];
+  let arr8 = [];
+  let arr9 = [];
+  let arr10 = [];
+  let arr11 = [];
+  let arr12 = [];
+  let totalArr = [];
+    for(let i = 0; i < cookieStores.length; i++){
+      arr1.push(cookieStores[i][0])
+      arr2.push(cookieStores[i][1])
+      arr3.push(cookieStores[i][2])
+      arr4.push(cookieStores[i][3])
+      arr5.push(cookieStores[i][4])
+      arr6.push(cookieStores[i][5])
+      arr7.push(cookieStores[i][6])
+      arr8.push(cookieStores[i][7])
+      arr9.push(cookieStores[i][8])
+      arr10.push(cookieStores[i][9])
+      arr11.push(cookieStores[i][10])
+      arr12.push(cookieStores[i][11])
+    }
+    var sum1 = arr1.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum1)
+    var sum2 = arr2.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum2)
+    var sum3 = arr3.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum3)
+    var sum4 = arr4.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum4)
+    var sum5 = arr5.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum5)
+    var sum6 = arr6.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum6)
+    var sum7 = arr7.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum7)
+    var sum8 = arr8.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum8)
+    var sum9 = arr9.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum9)
+    var sum10 = arr10.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum10)
+    var sum11 = arr11.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum11)
+    var sum12 = arr12.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum12)
+      return totalArr;
 
 };
 
@@ -38,7 +114,89 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let arr1 = [];
+  let arr2 = [];
+  let arr3 = [];
+  let arr4 = [];
+  let arr5 = [];
+  let arr6 = [];
+  let arr7 = [];
+  let arr8 = [];
+  let arr9 = [];
+  let arr10 = [];
+  let arr11 = [];
+  let arr12 = [];
+  let totalArr = [];
+    for(let i = 0; i < cookieStores.length; i++){
+      arr1.push(cookieStores[i][0])
+      arr2.push(cookieStores[i][1])
+      arr3.push(cookieStores[i][2])
+      arr4.push(cookieStores[i][3])
+      arr5.push(cookieStores[i][4])
+      arr6.push(cookieStores[i][5])
+      arr7.push(cookieStores[i][6])
+      arr8.push(cookieStores[i][7])
+      arr9.push(cookieStores[i][8])
+      arr10.push(cookieStores[i][9])
+      arr11.push(cookieStores[i][10])
+      arr12.push(cookieStores[i][11])
+    }
+    var sum1 = arr1.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum1)
+    var sum2 = arr2.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum2)
+    var sum3 = arr3.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum3)
+    var sum4 = arr4.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum4)
+    var sum5 = arr5.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum5)
+    var sum6 = arr6.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum6)
+    var sum7 = arr7.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum7)
+    var sum8 = arr8.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum8)
+    var sum9 = arr9.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum9)
+    var sum10 = arr10.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum10)
+    var sum11 = arr11.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum11)
+    var sum12 = arr12.reduce(function(a, b){
+          return a + b;
+      }, 0);
+      totalArr.push(sum12)
+      console.log(totalArr[0]);
+
+      let salesArr = []
+for(let i = 0; i < hours.length; i++){
+      var time1 = { sales: `${totalArr[i]} cookies`, time: hours[i] }
+      salesArr.push(time1);
+}
+return salesArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,7 +218,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +240,15 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
+  // for(let i = 0; i < board.length; i++){ //nested loop failed edge case! I'll just leave this here.
+  //   for(let j = 0; j < board.length; j++){
+      if(board[row][col] === ' '){
+        return 'miss';
+      } 
+
+      if(board[row][col] === '#'){
+        return 'hit';
+      }
 };
 
 /* ------------------------------------------------------------------------------------------------
